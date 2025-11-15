@@ -1,0 +1,12 @@
+name: GitHub Actions Test
+
+on: [push]
+
+jobs:
+  run-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Say Hello
+        run: echo "Hello Sanjay, SPDemo GitHub Action is running!"
